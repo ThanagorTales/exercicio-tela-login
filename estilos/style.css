@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 :root{
-    --mobile-bg-color: rgb(62, 66, 66);
+    --bg-primary-color: rgb(119, 150, 150);
+    --bg-second-color: #033327;
 }
 
 *{
@@ -12,7 +13,7 @@
 }
 
 body, html{
-    background-color: var(--mobile-bg-color);
+    background-color: var(--bg-primary-color);
     height: 100vh;
     width: 100vw;
 }
@@ -32,10 +33,13 @@ main{
     border-radius: 1.5em;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.55);
+
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 }
 #login #imagem{
     display: block;
-    background: var(--mobile-bg-color) url(../imagens/pattern-exer-login.jpg) no-repeat;
+    background: var(--bg-primary-color) url(../imagens/pattern-exer-login.jpg) no-repeat;
     background-size: cover;
     background-position: left bottom;
     height: 200px;   
