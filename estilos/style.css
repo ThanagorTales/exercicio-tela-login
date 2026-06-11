@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 :root{
-    --mobile-bg-color: #141f1f;
+    --mobile-bg-color: rgb(62, 66, 66);
 }
 
 *{
@@ -30,7 +30,19 @@ main{
     width: 250px;
     height: 500px;
     border-radius: 1.5em;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.55);
 }
 #login #imagem{
-    background: var(--mobile-bg-color) url(../imagens/pattern-exer-login.jpg);
+    display: block;
+    background: var(--mobile-bg-color) url(../imagens/pattern-exer-login.jpg) no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+    height: 200px;   
+}
+
+#login #formulario{
+    display: block;
+    padding: .8em;
+
 }
